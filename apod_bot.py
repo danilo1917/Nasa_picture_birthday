@@ -3,12 +3,12 @@ import requests
 import json
 import ast
 
-API_KEY = "5120220635:AAGIQ02_zWBvT2O6kudCcKLg2sYU7MbG2FY"
+API_KEY = "YOUR TELEGRAM BOT API HERE "
 bot = telebot.TeleBot(API_KEY)
 
 def retorna_foto(mensagem):
 	data = mensagem.text
-	nasa_api_key = "soLrRU1KzdE6hR5xVUXZL2yK39QWEhBQAz2nLDts"
+	nasa_api_key = "YOUR NASA API KEY HERE"
 	url = f"https://api.nasa.gov/planetary/apod?api_key={nasa_api_key}&date={data}"
 	try:
 		response = requests.get(url)
